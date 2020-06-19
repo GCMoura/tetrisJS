@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #00abe7;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-family: consolas, sans-serif;
+    font-size: 24px;
+}
+
+#score{
+    margin-right: 50px;
+}
+
+#start-button {
+    font-family: consolas, sans-serif;
+    font-size: 24px;
+    padding: 8px;
+}
+#start-button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.grid {
+    width: 260px;
+    height: 520px;
+    display: flex;
+    flex-wrap: wrap; /*colocar os quadrados menores dentro do tabuleiro*/
+    background-color: #0081AF;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.grid div{
+    
+    border-radius: 1px;
+    height: 26px;
+    width: 26px;
+}
+
+.tetromino{
+    border: solid 1px #222;
+}
+
+.mini-grid {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0081AF;
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 600px) {
+    .mini-grid {
+        display: none;
+    }
+}
