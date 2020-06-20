@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let nextRandom = 0
     let timerId
     let score = 0
-    var speedGame = 500
+    var speedGame = 1000
     const colors = [
         '#e4cc37',//orange
         '#f71735', //red
@@ -230,12 +230,12 @@ document.addEventListener('DOMContentLoaded', () => {
     //game over
     function gameOver(){
         if(current.some(index => squares[currentPosition + index].classList.contains("taken"))) {
-            scoreDisplay.style.color = "red"
-            startBtn.innerText = 'Restart'
-            startBtn.addEventListener('click', () => {
-              window.location.reload(true)
-            })
-            clearInterval(timerId)
+          clearInterval(timerId)
+          scoreDisplay.style.color = "red"
+          startBtn.innerText = 'Restart'
+          startBtn.addEventListener('click', () => {
+            window.location.reload(true)
+          })
         }
     }
 })

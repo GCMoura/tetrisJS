@@ -61,6 +61,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    display: none;
 }
 #btn {
     margin-top: 200px;
@@ -73,7 +74,7 @@ body{
 
 
 @media (max-width: 600px) {
-    .mini-grid {
-        display: none;
+    .two-buttons {
+        display: block;
     }
 }
